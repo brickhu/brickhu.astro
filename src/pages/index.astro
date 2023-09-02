@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Site from '../../site.config.json'
 ---
 
-<BaseLayout title="brickhu">
-  <button class="btn btn-primary">Hello daisyUI</button>
-  <div class="text-base-300 bg-primary-focus">文字测试</div>
-  <div class="text-base-content">文字测试</div>
+<BaseLayout title="brickhu" bg="#ddff00">
+  {Site.name}
 </BaseLayout>

@@ -10,7 +10,7 @@ export default function Header() {
           <a class="btn btn-ghost normal-case text-xl" href="/">{Site.name}</a>
         </div>
         <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 invisible md:visible">
             {Site.menus.map((i)=>(
               <li><a href={i.path}>{i.name}</a></li>
             ))}
