@@ -10,6 +10,8 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
+import Greeting from '../../components/greeting'
+
 # mdx
 
  欢迎来到我学习关于 Astro 的新博客！在这里，我将分享我建立新网站的学习历程。
@@ -25,3 +27,18 @@ tags: ["astro", "blogging", "learning in public"]
  ## 下一步计划
 
  我将完成 Astro 教程，然后继续编写更多内容。关注我以获取更多信息。
+> A greater than…
+
+Some `backticks` for inline.
+
+```js
+backtick.fences('for blocks')
+```
+	
+Some *asterisks* for emphasis.
+
+```js
+backtick.fences('for blocks')
+```
+
+ <Greeting messages={['a','b','c']} client:load></Greeting>
