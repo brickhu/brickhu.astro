@@ -27,3 +27,4 @@ tags: ["astro", "blogging", "learning in public"]
  ## 下一步计划
 
  我将完成 Astro 教程，然后继续编写更多内容。关注我以获取更多信息。
+![图 3](../../../public/images/0756c6f8054ccbb62361a225a1ff97f4769c5be7ac27d43187c11b261b048288.jpeg)  
