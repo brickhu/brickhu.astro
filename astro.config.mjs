@@ -4,6 +4,9 @@ import tailwind from "@astrojs/tailwind";
 import react from '@astrojs/react';
 
 export default defineConfig({
-    integrations: [react(), mdx(), tailwind()]
+    integrations: [react(), mdx(), tailwind()],
+    markdown: {
+      drafts: false,
+    }
   }
 );
