@@ -7,6 +7,9 @@ export default defineConfig({
     integrations: [react(), mdx(), tailwind()],
     markdown: {
       drafts: false,
+    },
+    redirects: {
+      '/blogs': '/blogs/1'
     }
   }
 );
