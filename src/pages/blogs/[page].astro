@@ -1,0 +1,28 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+export async function getStaticPaths({ paginate }) {
+  const collection = 'blog'
+  const allBlogPosts = await getCollection(collection)
+  return paginate(allBlogPosts, { pageSize: 10 });
+}
+const { page } = Astro.props;
+const {currentPage,lastPage,url} = page
+const pageIndexArray = new Array(lastPage).fill('')
+---
+<BaseLayout title="Blog">
+
+  <div class="flex justify-center flex-col items-center">
+    <ul>
+      {page.data.map((post) => <li><a href={"/blog/" + post.slug}>{post.data.title}</a></li>)}
+    </ul>
+    <div>
+      {pageIndexArray.length>1 && 
+        <div class="join">
+          {pageIndexArray.map((i,idex) => <button class="join-item btn btn-xs">{idex+1}</button>)}
+        </div>
+      }
+    </div>
+  </div>
+</BaseLayout>

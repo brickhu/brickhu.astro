@@ -1,0 +1,14 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const collection = 'blog'
+const allBlogPosts = await getCollection(collection)
+console.log('allBlogPosts: ', allBlogPosts);
+// if(allBlogPosts.length>10){
+//   return Astro.redirect('/blogs/1');
+// }
+
+---
+<BaseLayout title="Blog">
+  loading
+</BaseLayout>
