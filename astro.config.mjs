@@ -8,8 +8,6 @@ export default defineConfig({
     markdown: {
       drafts: false,
     },
-    redirects: {
-      '/blogs': '/blogs/1'
-    }
+    site: 'https://brickhu.ruwu.xyz'
   }
 );
